@@ -1,5 +1,10 @@
 <?php
-  $name = "山田";
-  $name .= "花子";
-  echo "ようこそ" . $name . "さん";
+  $a = 8;
+  $b = 3;
+
+  echo $a + $b . "<br>";
+  echo $a - $b . "<br>";
+  echo $a * $b . "<br>";
+  echo $a / $b . "<br>";
+  echo $a % $b . "<br>";
 ?>
