@@ -1,11 +1,8 @@
 <?php
-  $true = TRUE;
-  $false = FALSE;
-
-  $a = !$true;
-  $b = !$false;
-  $c = !$true && !$true;
-  $d = !($true && $true);
-  
-  var_dump($a, $b, $c, $d);
+  $age = 23;
+  if ( $age >= 20 ){
+    echo "お酒が買えます";
+  } else {
+    echo "お酒は買えません";
+  }
 ?>
