@@ -1,5 +1,8 @@
 <?php
-  for ( $i = 1; $i <= 10; $i = $i + 1) {
-    echo $i . "<br>";
+  for ( $i = 1; $i <= 31; $i++){
+    echo $i;
+    if ($i % 7 == 0){
+      echo '<br>';
+    }
   }
 ?>
