@@ -1,4 +1,4 @@
 <?php
-  var_dump(PHP_INT_MAX);
-  var_dump(PHP_INT_MAX+1);
+  $name = "山田花子";
+  echo "ようこそ" . $name . "さん";
 ?>
