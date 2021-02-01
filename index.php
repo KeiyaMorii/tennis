@@ -1,12 +1,10 @@
+<pre>
 <?php
-  $i = 2;
-  switch ($i) {
-    case 0:
-    case 1:
-      echo "iは0か1です。";
-      break;
-    case 2:
-      echo "iは2です。";
-      break;
-  }
+  $friends = array("はるき", "かおる", "ひでと", "まさとし", "たかのり");
+  array_push($friends, "ともゆき");
+  var_dump($friends);
+
+  array_push($friends, "ゆうた", "てつや");
+  var_dump($friends);
 ?>
+</pre>
