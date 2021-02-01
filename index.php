@@ -1,12 +1,10 @@
 <pre>
 <?php
-  $result = array(
-    "japanese" => 80,
-    "math"     => 75,
-    "science"  => 90,
-    "history"  => 85,
-    "english"  => 80
-  );
+  $result["japanese"] = 80;
+  $result["math"]     = 75;
+  $result["science"]  = 90;
+  $result["history"]  = 85;
+  $result["english"]  = 80;
   var_dump($result);
 ?>
 </pre>
