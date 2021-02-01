@@ -1,8 +1,12 @@
 <pre>
 <?php
-  $friends = array("はるき", "かおる", "ひでと", "まさとし", "たかのり");
-  for ($i = 0; $i < 5; $i++) {
-    echo $friends[$i] . "<br>";
+  $results = array(
+    "math" => 90,
+    "english" => 80,
+    "japanese" => 85
+  );
+  foreach ($results as $title => $score) {
+    echo $title . ":" . $score . "<br>";
   }
 ?>
 </pre>
