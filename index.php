@@ -1,18 +1,12 @@
 <pre>
 <?php
-  $result = array(
-    "japanese" => 80,
-    "math"     => 75,
-    "science"  => 90,
-    "history"  => 85,
-    "english"  => 80
+  $result = array("math" => 90, "english" => 80);
+  $friends = array(
+    "Haruki" => $result,
   );
-  var_dump($result);
+  var_dump($friends);
 
-  $result["math"] = 85;
-  var_dump($result);
-
-  $result["music"] = 90;
-  var_dump($result);
+  $friends["Kaoru"] = array("math" => 95, "english" => 85);
+  var_dump($friends);
 ?>
 </pre>
