@@ -1,12 +1,7 @@
-<pre>
 <?php
-  $results = array(
-    "math" => 90,
-    "english" => 80,
-    "japanese" => 85
-  );
-  foreach ($results as $title => $score) {
-    echo $title . ":" . $score . "<br>";
+  function default_demo($age, $name = "太郎") {
+    echo "名前は" . $name . "です。年齢は" . $age . "です。";
   }
+
+  default_demo(20);
 ?>
-</pre>
