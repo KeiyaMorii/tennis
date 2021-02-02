@@ -1,7 +1,15 @@
 <?php
-  function default_demo($age, $name = "太郎") {
-    echo "名前は" . $name . "です。年齢は" . $age . "です。";
-  }
+  echo vending_machine (120, "オレンジジュース");
 
-  default_demo(20);
+  $price = 90;
+  $juice_name = "アップルジュース";
+  echo vending_machine($price, $juice_name);
+
+  function vending_machine ($price, $juice_name) {
+    if ($price >= 120) {
+      return $juice_name . "のお買い上げありがとうございます！<br>";
+    } else {
+      return $juice_name . "の購入金額が不足しています･･･<br>";
+    }
+  }
 ?>
