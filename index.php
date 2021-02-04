@@ -1,4 +1,4 @@
-<?php $info = file_get_contents("info.txt"); ?>
+<?php $fp = fopen("info.txt", "r"); ?>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -7,6 +7,17 @@
 <body>
   <h1>テニスサークル交流サイト</h1>
   <h2>お知らせ</h2>
-  <?php echo nl2br($info, false); ?>
+  <?php if ($fp){
+    $title = fgets($fp);
+    if ($title){
+      echo '<a href="info.php">' . $title . '</a>';
+    } else {
+      echo 'お知らせはありません。';
+    }
+    fclose($fp);
+  } else {
+    echo 'お知らせはありません。';
+  }
+  ?>
 </body>
 </html>
